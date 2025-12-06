@@ -23,14 +23,6 @@ def user_processing():
         """
     )
 
-    # delete_table = SQLExecuteQueryOperator(
-    #     task_id="delete_table",
-    #     conn_id = "postgres",
-    #     sql = """
-    #     DROP TABLE IF EXISTS users;
-    #     """
-    # )
-
     @task.sensor(poke_interval=10, timeout=60)
     def is_api_available() -> PokeReturnValue:
         response = requests.get("https://jsonplaceholder.typicode.com/users")
