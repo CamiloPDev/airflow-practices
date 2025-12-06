@@ -1,0 +1,16 @@
+# Apache Airflow Core
+apache-airflow==3.0.0
+
+# Airflow Providers
+apache-airflow-providers-postgres>=5.0.0
+apache-airflow-providers-common-sql>=1.0.0
+apache-airflow-providers-fab>=1.0.0
+
+# Database
+psycopg2-binary>=2.9.0
+
+# HTTP Requests
+requests>=2.31.0
+
+# Python Version
+# Python >= 3.10 required
